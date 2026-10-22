@@ -6,6 +6,7 @@ import './App.css'
 import { Routes, Route } from 'react-router-dom'
 import NavigationBar from './pages/NavigationBar'
 import Favorites from './pages/Favorites'
+import BlogDetails from './pages/BlogDetails'
 function App() {
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
         <Route path='/bloglist' element={<BlogList />} />
         <Route path='/addblog' element={<AddBlog />} />
         <Route path='/favorites' element={<Favorites/>}/>
+        <Route path='/blogs/:id' element={<BlogDetails/>}/>
       </Routes>
 
     </>
